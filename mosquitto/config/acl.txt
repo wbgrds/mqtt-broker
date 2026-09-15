@@ -1,0 +1,12 @@
+user olaf
+topic read #
+topic write #
+
+user home-assistant
+topic read sensor/#
+topic read device/#
+topic write command/#
+
+user n8n
+topic read #
+topic write #

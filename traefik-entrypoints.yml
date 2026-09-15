@@ -1,0 +1,24 @@
+entryPoints:
+  mqtt:
+    address: ":1883"
+  mqtt-tls:
+    address: ":8883"
+    transport:
+      respondingTimeouts:
+        readTimeout: 0
+        writeTimeout: 0
+      dialTimeouts:
+        dial: 30s
+  websecure:
+    address: ":443"
+    http:
+      tls:
+        certResolver: letsencrypt
+
+certificatesResolvers:
+  letsencrypt:
+    acme:
+      email: admin@ob5.dev
+      storage: acme.json
+      httpChallenge:
+        entryPoint: web

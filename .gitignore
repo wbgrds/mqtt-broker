@@ -1,0 +1,18 @@
+# Docker
+mosquitto/data/*
+mosquitto/log/*
+certs/*
+certbot-webroot/*
+
+# Passwörter (WICHTIG)
+mosquitto/config/passwords.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
